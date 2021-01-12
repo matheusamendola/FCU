@@ -14,6 +14,14 @@
         <link rel="stylesheet" href="./bulma/css/bulma.css">
         
         <style type="text/css">
+        h1 {text-align: center;}
+        .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
         .select, .select select{ 
         width: 100%;
         }
@@ -40,10 +48,13 @@
                                 <img src="./images/logo.png" alt="logo PMVV" width="200" height="200">
                             </a>
                         </h1>
+                        <h1> FCU - Formulário de Cadastro de Usuário</h1>
                     </div>
                 </section>
                 </div>              
         </div>
+
+        
         <!-- Espaço -->
         <p class="clear"></p>
 
@@ -222,24 +233,11 @@
                     <div class="control">
                       <label class="checkbox">
                         <input type="checkbox">
-                        Li e Aceito o <a href="#">Termo de Responsabilidade</a> que rege a relação entre a Prefeitura Municipal de Vila Velha e os Usuários dos serviços.
+                        Li e Aceito o <a href="./documents/Normas_TI.pdf" target="_blank"> Termo de Responsabilidade</a> que rege a relação entre a Prefeitura Municipal de Vila Velha e os Usuários dos serviços.
                       </label>
                     </div>
                 </div>
 
-                <!-- Termo de Aceite -->
-                <div class="field">
-                    <div class="control">
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        Li e Aceito o <a href="#">Termo de Aceite</a> que informa as diretrizes para o uso da Rede Corporativa
-                      </label>
-                    </div>
-                </div>
-
-                <div align>
-
-                </div>
 <!--
                 <div class="card">
                     <div id="signature-pad" class="signature-pad">
@@ -260,8 +258,13 @@
                     </div>
                     </div>
 -->
-                
-                  
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Enviar</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancelar</button>
+                </div>
             </div>
         </div>
         <script src="./js/signature_pad.umd.js"></script>
