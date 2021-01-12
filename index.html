@@ -6,79 +6,213 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="./bulma/css/bulma.css">
+        <style type="text/css">
+        .select, .select select{ 
+        width: 100%;
+        }
+        .card{
+        padding: 10px;
+        }
+
+        </style>
     </head>
 
     <!-- Body -->
     <body>
 
-          &nbsp;
+        &nbsp;
 
         <div class="container">
-            <div class="card">
+            <div class="cardtitulo">
                 <section class="hero is-small is-info is-bold " >
                     <div class="hero-body">
                         <h1 class="title">
                             <a href="https://www.vilavelha.es.gov.br/">
-                              <img src="./images/logo.png" alt="logo PMVV" width="200" height="200">
+                                <img src="./images/logo.png" alt="logo PMVV" width="200" height="200">
                             </a>
                         </h1>
                     </div>
                 </section>
-              </div>              
+                </div>              
         </div>
         <!-- Espaço -->
-        &nbsp;
+        &nbsp
+
+        <!-- Container 1-->
         <div class="container">
-            <div class="columns">
-                <div class="column is-one-quarter"> 
-                    <div class="field">
-                        <label class="label">Nome:</label>
-                        <div class="control">
-                            <input class="input" type="text" placeholder="Nome">
+            <div class="card">
+
+                <!--Linha 1-->
+                <div class="columns">
+                    <div class="column is-one-quarter"> 
+                        <div class="field">
+                            <label class="label">Nome:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Nome">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column is-one-third"> 
-                    <div class="field">
-                        <label class="label">&nbsp;</label>
-                        <div class="control">
-                            <input class="input" type="email" placeholder="Sobrenome">
+                    <div class="column is-one-quarter"> 
+                        <div class="field">
+                            <label class="label">&nbsp;</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Sobrenome">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column"> 
-                    <div class="field">
-                        <label class="label">CPF:</label>
-                        <div class="control">
-                            <input class="input" type="email" placeholder="Ex. 000.000.000-00">
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">CPF:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ex. 000.000.000-00">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column"> 
-                    <div class="field">
-                        <label class="label">RG:</label>
-                        <div class="control">
-                            <input class="input" type="email" placeholder="Ex. 00.000.000-0">
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">RG:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ex. 00.000.000-0">
+                            </div>
                         </div>
                     </div>
+
+                    
                 </div>
 
+                <!-- Linha  -->
+                <div class="columns">
+                    <div class="column is-half"> 
+                        <div class="field">
+                            <label class="label">Secretaria:</label>
+                            <div class="select">
+                                <!-- Mudar aqui caso adicione / modifique a secretaria -->
+                                <select>
+                                    <option></option>
+                                    <option>Procuradoria Geral do Município</option>
+                                    <option>Secretaria Municipal de Administração</option>
+                                    <option>Secretaria Municipal de Assistência Social</option>
+                                    <option>Secretaria Municipal de Comunicação</option>
+                                    <option>Secretaria Municipal de Controle e Transparência</option>
+                                    <option>Secretaria Municipal de Turismo, Esporte e Cultura</option>
+                                    <option>Secretaria Municipal de Defesa Social e Trânsito</option>
+                                    <option>Secretaria Municipal de Desenvolvimento Econômico</option>
+                                    <option>Secretaria Municipal de Desenvolvimento Urbano e Mobilidade</option>
+                                    <option>Secretaria Municipal de Educação - </option>
+                                    <option>Secretaria Municipal de Finanças</option>
+                                    <option>Secretaria Municipal de Governo e Coordenação Institucional</option>
+                                    <option>Secretaria Municipal de Meio Ambiente</option>
+                                    <option>Secretaria Municipal de Obras</option>
+                                    <option>Secretaria Municipal de Planejamento e Projetos Estruturantes</option>
+                                    <option>Secretaria Municipal de Saúde</option>
+                                    <option>Secretaria Municipal de Serviços Urbanos</option>
+                                    <option>Secretaria Municipal de Tecnologia e Inovação</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">Coordenação:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ex. 000.000.000-00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">Telefone Setor / Ramal :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ex.: (00) 00000-0000">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Linha  -->
+                <div class="columns">
+                    <div class="column is-half"> 
+                        <div class="field">
+                            <label class="label">Função Exercida:</label>
+                            <div class="control">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">Coordenação:</label>
+                            <div class="select">
+                                <select>
+                                  <option></option>
+                                  <option>Comissionado</option>
+                                  <option>Contratado</option>
+                                  <option>Efetivo</option>
+                                  <option>Estagiário</option>
+                                  <option>Tercerizado</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">Matrícula :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ex.: 0000000-00">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Linha  -->
+                <div class="columns">
+                    <div class="column is-half"> 
+                        <div class="field">
+                            <label class="label">Unidade:</label>
+                            <div class="control">
+                                <input class="input" type="text">
+                            </div>
+                            <p class="help">Ex.: Posto de Saúde ou Unidade Escolar que Trabalha</p>
+                        </div>
+                    </div> 
+                </div>
                 
-            </div>
-            
-            
 
+                <!-- Linha  -->
+                <div class="columns">
+                    <div class="column is-four-fifths"> 
+                        <div class="field">
+                            <label class="label">Pasta de rede:</label>
+                            <div class="control">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"> 
+                        <div class="field">
+                            <label class="label">Permissão:</label>
+                            <div class="select">
+                                <select>
+                                    <option>Somente Leitura</option>
+                                    <option>Leitura e Gravação</option>
+                                </select>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
         </div>
     </body>
 
-        <!-- Espaço -->
-        &nbsp;
+    <!-- Espaço -->
+    &nbsp
 
     <!-- Footer -->
     <footer class="footer">
         <div class="content has-text-centered">
-          <p> <strong>Secretaria de Tecnologia e Inovação - SEMTI</strong> </p>
+            <p> <strong>Secretaria de Tecnologia e Inovação - SEMTI</strong> </p>
         </div>
-      </footer>
+    </footer>
 
 </html>
